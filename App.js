@@ -17,6 +17,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import Hello_World from './Hello_World';
 
 import {
   Colors,
@@ -30,6 +31,7 @@ const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
     <View style={styles.sectionContainer}>
+      <Hello_World style={{height: '20%', backgroundColor: '#FFFFFF'}} />
       <Text
         style={[
           styles.sectionTitle,
